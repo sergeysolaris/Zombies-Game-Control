@@ -34,8 +34,6 @@ public class GameController : MonoBehaviour {
 	public GameObject gOverPanel;
 	public GameObject loadingPanel;
 	private bool gOver = false;
-	
-	// Use this for initialization
 		
 	void Start () {
 		player = GameObject.Find("Player");
@@ -76,8 +74,7 @@ public class GameController : MonoBehaviour {
 		yield return new WaitForSeconds(8);
 		pointer.SetActive(false);
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		
 		foreach (Touch t in Input.touches) {
